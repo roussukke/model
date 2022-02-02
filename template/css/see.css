@@ -1,0 +1,33 @@
+main {
+    display: block;
+}
+
+.navkiri {
+    height: 100%;
+    width: 200px;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.w {
+    height: 100%;
+}
+
+.-animate-left {
+    position: relative;
+    animation: animateleft 0.4s;
+    -webkit-animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
